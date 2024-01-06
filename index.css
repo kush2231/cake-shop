@@ -1,0 +1,85 @@
+body {
+  background-image: linear-gradient(
+    to right,
+    rgb(231, 223, 203),
+    rgb(220, 220, 225)
+  );
+}
+.title {
+  text-align: center;
+  color: rgb(255, 0, 0);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-style: inherit;
+}
+
+.title:hover {
+  animation: shake 1s ease infinite;
+}
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+  20% {
+    transform: translateX(-5px);
+  }
+  40% {
+    transform: translateX(5px);
+  }
+  60% {
+    transform: translateX(-5px);
+  }
+  80% {
+    transform: translateX(5px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.row {
+  display: flex;
+  justify-content: space-around;
+}
+.card {
+  text-align: center;
+  /* height: 300px; */
+  width: 300px;
+  padding: 10px;
+  margin: 10px 10px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 2px 1px rgb(82, 115, 82);
+  transition: transform 1s;
+}
+img {
+  height: 50%;
+  width: 90%;
+}
+a {
+  text-decoration: none;
+}
+.card:hover {
+  transform: scale(1.05);
+}
+p {
+  text-align: center;
+}
+@media screen and (max-width: 600px) {
+  .card {
+    width: 40%;
+  }
+  .row {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 450px) {
+  .card {
+    width: 80%;
+    height: 300px;
+  }
+  .row {
+    flex-wrap: wrap;
+  }
+  .img {
+    height: 80%;
+  }
+}
