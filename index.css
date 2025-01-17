@@ -1,8 +1,8 @@
 body {
   background-image: linear-gradient(
     to right,
-    rgb(231, 223, 203),
-    rgb(220, 220, 225)
+    rgb(205, 231, 203),
+    rgb(25, 145, 25)
   );
 }
 .title {
